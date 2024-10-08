@@ -1,3 +1,16 @@
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--spacing-md)
+}
+
+.padding--width {
+	padding-inline: var(--padding-width);
+}
+
 .flex {
 	display: flex;
 }
@@ -5,4 +18,8 @@
 .flex--column {
 	display: flex;
 	flex-direction: column;
+}
+
+.margin-left--auto {
+	margin-left: auto;
 }

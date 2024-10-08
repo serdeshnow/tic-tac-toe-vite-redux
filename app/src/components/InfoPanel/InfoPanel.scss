@@ -1,0 +1,26 @@
+.info-panel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-inline: var(--spacing-xl);
+	padding-block: var(--spacing-sm);
+	border-radius: var(--border-radius-md);
+	background-color: var(--color-dark);
+	cursor: default;
+
+	&__player {
+		&-X{
+			color: var(--color-cross);
+			box-shadow: var(--box-shadow-blue);
+		}
+
+		&-O{
+			color: var(--color-nought);
+			box-shadow: var(--box-shadow-red);
+		}
+	}
+
+	&__draw {
+		color: var(--color-primary);
+	}
+}

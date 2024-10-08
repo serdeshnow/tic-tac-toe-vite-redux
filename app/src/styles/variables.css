@@ -1,3 +1,29 @@
 * {
-	--variable-example: 0;
+	--font-size: 32px;
+
+	--line-height: 40px;
+
+	--color-primary: #D6D1CD;
+	--color-light-blue: #8badc9;
+	--color-cross: #3F88C5;
+	--color-light-red: #c9837e;
+	--color-nought: #BB342F;
+	--color-dark: #140F2D;
+	--color-dark-hover: #211c37;
+	--color-dark-active: #2d2841;
+
+	--box-shadow-blue: 0 0px 20px 5px rgba(63, 136, 197, 0.5);
+	--box-shadow-red: 0 0px 20px 5px rgba(187, 52, 47, 0.4);
+
+	--transition-default: all 0.15s ease-in-out;
+
+	--border-radius-sm: 4px;
+	--border-radius-md: 8px;
+
+	--padding-width: min(640px, 33vw);
+	--spacing-sm: 10px;
+	--spacing-md: 20px;
+	--spacing-lg: 50px;
+	--spacing-xl: 100px;
+
 }

@@ -1,0 +1,60 @@
+.game-field {
+	display: grid;
+	gap: var(--spacing-sm);
+	grid-template-columns: repeat(3, 1fr);
+
+	&__cell-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: 200px;
+		aspect-ratio: 1;
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-sm);
+		transition: var(--transition-default);
+
+		&:hover {
+			background-color: var(--color-dark-hover);
+		}
+
+		&:active {
+			background-color: var(--color-dark-active);
+		}
+
+		&-X {
+			box-shadow: 0 0 15px var(--color-light-blue);
+		}
+
+		&-X::after,
+		&-X::before, {
+			content: "";
+			position: absolute;
+			width: 200px;
+			aspect-ratio: 10 / 1;
+			background-color: var(--color-cross);
+			border-radius: 20px;
+		}
+
+		&-X::after {
+			transform: rotate(45deg);
+		}
+
+		&-X::before {
+			transform: rotate(-45deg);
+		}
+
+		&-O {
+			box-shadow: 0 0 15px var(--color-light-red);
+		}
+
+		&-O::before {
+			content: "";
+			position: absolute;
+			width: 180px;
+			aspect-ratio: 1 / 1;
+			border: 20px solid var(--color-nought);
+			border-radius: 50%;
+		}
+	}
+}
