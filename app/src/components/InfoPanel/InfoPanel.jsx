@@ -17,7 +17,7 @@ export const InfoPanel = () => {
 				? "Ничья"
 				: isGameOver
 					? `Победа: ${currentPlayer}`
-					: `Ходит: ${currentPlayer}`}
+					: `bruh: ${currentPlayer}`}
 		</section>
 	);
 };
